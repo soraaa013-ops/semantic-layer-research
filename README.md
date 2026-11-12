@@ -1,6 +1,6 @@
-# 企业数据语义层与 AI 数据分析调研
+# 数据语义层与 AI 数据分析调研
 
-**Enterprise Semantic Layers & Agentic Data Analysis**
+**Semantic Layers & Agentic Data Analysis**
 
 研究企业如何把业务概念、指标计算、数据权限和分析能力，做成 BI、应用与 AI 可以共同使用的基础设施。
 
