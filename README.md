@@ -8,12 +8,15 @@
 
 资料核查日期：**2026-11-12**。本仓库包含公开资料研究、部分源码静态核查和可运行的虚构数据示例；尚未进行厂商产品部署或模型基准复测。
 
-**如果你首先想知道“作为 IT 团队究竟怎么建、建完交付什么”，请从 [终端 IT 完整建设案例](docs/terminal-it-walkthrough.md) 开始。** 它从业务需求、应用数据、对象映射和口径确认，走到四种厂商实现与消费方式，并提供一个可运行的销售与退款计算例子。
+**当前重点是 Agent 消费数据。请先读 [Agent 数据服务与 Ossie / OSI](docs/agent-data-and-ossie.md)**：解释语义发现、查询执行、结果证据，以及标准在其中的实际作用。
+
+如果想进一步知道“作为 IT 团队怎么建、建完交付什么”，接着读 [终端 IT 完整建设案例](docs/terminal-it-walkthrough.md)。它从业务需求、应用数据、对象映射和口径确认，走到四种厂商实现与消费方式，并提供一个可运行的销售与退款计算例子。
 
 ## 阅读导航
 
 | 文档 | 内容 |
 | --- | --- |
+| [Agent 数据服务与 Ossie / OSI](docs/agent-data-and-ossie.md) | Agent 的数据消费流程、标准格式、MCP 与执行层边界、版本与转换损失 |
 | [终端 IT 完整建设案例](docs/terminal-it-walkthrough.md) | 从应用数据到可消费模型；Looker、Power BI、Snowflake、Palantir 的实际建设动作 |
 | [可运行的销售与退款示例](examples/terminal-sales/README.md) | 为什么接通表还不够；用虚构数据验证粒度、状态、退款和计算结果 |
 | [厂商方案深度调研](docs/vendor-landscape.md) | Looker、Power BI / Fabric、dbt、Cube、AtScale、Snowflake、Databricks、Denodo、SuperSonic、Palantir |

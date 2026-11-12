@@ -2,6 +2,21 @@
 
 资料核查日期：2026-11-12。
 
+## Agent 消费与 Ossie 的补充来源
+
+| 来源 | 用途与版本 |
+| --- | --- |
+| [Apache Ossie 官网](https://ossie.apache.org/) | 原 OSI、当前孵化状态 |
+| [核心规范](https://github.com/apache/ossie/blob/e6ad94ee87a53fd8f8b6dbf0de33fab59e406c0c/core-spec/spec.md) | 固定提交的 `0.3.0.dev0` 开发草案，包含破坏性格式变更 |
+| [机器可读 Schema](https://github.com/apache/ossie/blob/e6ad94ee87a53fd8f8b6dbf0de33fab59e406c0c/core-spec/ossie-schema.json) | 本仓库原创语义样例已通过结构校验；不等于语义执行或产品认证 |
+| [关系查询接口](https://github.com/apache/ossie/blob/e6ad94ee87a53fd8f8b6dbf0de33fab59e406c0c/core-spec/relational_semantics.md) | 草案中的 measure 与 AGG 查询语义 |
+| [Ontology 规范](https://github.com/apache/ossie/blob/e6ad94ee87a53fd8f8b6dbf0de33fab59e406c0c/ontology/ontology.md) | 开发版本的概念、关系与映射 |
+| [官方转换器仓库](https://github.com/apache/ossie-converters) | 转换工具入口，不作为无损兼容认证 |
+| [Actian OSI 导出](https://docs.actian.com/ai-analyst/governance/export-semantic-layer-and-agents/open-semantic-interchange-format.html) | 官方声明支持的版本和信息丢失范围 |
+| [MCP 架构](https://modelcontextprotocol.io/docs/learn/architecture) | 工具、资源与上下文交换的职责 |
+
+以上均于 2026-11-12 核查。JSON 样例的验证方式与 Schema 哈希见 [示例说明](../examples/terminal-sales/README.md)。
+
 ## 证据分级
 
 | 类型 | 本仓库如何使用 |

@@ -1,0 +1,88 @@
+{
+  "version": "0.3.0.dev0",
+  "name": "terminal_sales",
+  "description": "Synthetic terminal sales. Fixed snapshot 2026-10-31. CNY. Not financial recognized revenue.",
+  "ai_context": {
+    "instructions": "Use sales.net_sales for net sales. Completed refunds restate the original sale period. This fixture contains September sales only: do not infer month-over-month decline without a comparison period. Authorization must be enforced by the query service, not by these instructions.",
+    "examples": [
+      "Show September net sales by model in East."
+    ]
+  },
+  "datasets": [
+    {
+      "name": "sales",
+      "source": "mart_sale_line",
+      "primary_key": [
+        "sale_line_id"
+      ],
+      "description": "One row per completed sale line; refunds pre-aggregated to this grain by the preparation view.",
+      "fields": [
+        {
+          "name": "sale_line_id",
+          "expression": {
+            "sql": "sale_line_id"
+          },
+          "datatype": "String"
+        },
+        {
+          "name": "sale_date",
+          "expression": {
+            "sql": "sale_date"
+          },
+          "datatype": "Date",
+          "dimension": {
+            "is_time": true
+          }
+        },
+        {
+          "name": "region",
+          "expression": {
+            "sql": "region"
+          },
+          "datatype": "String",
+          "ai_context": {
+            "synonyms": [
+              "区域"
+            ]
+          }
+        },
+        {
+          "name": "model_name",
+          "expression": {
+            "sql": "model_name"
+          },
+          "datatype": "String",
+          "ai_context": {
+            "synonyms": [
+              "机型"
+            ]
+          }
+        },
+        {
+          "name": "net_amount_cents",
+          "expression": {
+            "sql": "net_amount_cents"
+          },
+          "datatype": "Integer",
+          "description": "Completed sale amount minus completed refunds through snapshot, in CNY cents."
+        }
+      ],
+      "metrics": [
+        {
+          "name": "net_sales",
+          "expression": {
+            "sql": "SUM(net_amount_cents) / 100.0"
+          },
+          "datatype": "Decimal",
+          "description": "Net sales in CNY, attributed to original sale date.",
+          "ai_context": {
+            "synonyms": [
+              "净销售额"
+            ],
+            "instructions": "Not financial recognized revenue. Do not change the refund attribution or sum a previously aggregated ratio."
+          }
+        }
+      ]
+    }
+  ]
+}
