@@ -6,12 +6,16 @@
 
 每个方案回答四个问题：**谁做的、构建了什么、供给什么场景、为此做了什么设计。** 在此基础上，比较架构取舍与企业落地边界。
 
-资料核查日期：**2026-11-12**。本仓库是公开资料研究与部分源码静态核查，尚未进行产品部署或模型基准复测。
+资料核查日期：**2026-11-12**。本仓库包含公开资料研究、部分源码静态核查和可运行的虚构数据示例；尚未进行厂商产品部署或模型基准复测。
+
+**如果你首先想知道“作为 IT 团队究竟怎么建、建完交付什么”，请从 [终端 IT 完整建设案例](docs/terminal-it-walkthrough.md) 开始。** 它从业务需求、应用数据、对象映射和口径确认，走到四种厂商实现与消费方式，并提供一个可运行的销售与退款计算例子。
 
 ## 阅读导航
 
 | 文档 | 内容 |
 | --- | --- |
+| [终端 IT 完整建设案例](docs/terminal-it-walkthrough.md) | 从应用数据到可消费模型；Looker、Power BI、Snowflake、Palantir 的实际建设动作 |
+| [可运行的销售与退款示例](examples/terminal-sales/README.md) | 为什么接通表还不够；用虚构数据验证粒度、状态、退款和计算结果 |
 | [厂商方案深度调研](docs/vendor-landscape.md) | Looker、Power BI / Fabric、dbt、Cube、AtScale、Snowflake、Databricks、Denodo、SuperSonic、Palantir |
 | [DeepAnalyze 模型与系统调研](docs/deepanalyze.md) | 模型来源、训练设计、运行机制、论文结果、部署边界，以及 EvoOntology 延伸案例 |
 | [企业参考架构与选型](docs/architecture-and-selection.md) | 如何组合指标层、语义上下文、分析 Agent 和受控执行环境 |
@@ -48,4 +52,4 @@
 
 欢迎通过 Issue / Pull Request 补充来源、更正过期结论和提交可复现评测。参见 [贡献说明](CONTRIBUTING.md)。
 
-本仓库原创文字、表格与示意图使用 [CC BY 4.0](LICENSE)；引用材料、商标与上游项目仍遵循各自权利及许可证。
+本仓库原创文字、表格、示意图与示例代码使用 [CC BY 4.0](LICENSE)；引用材料、商标与上游项目仍遵循各自权利及许可证。

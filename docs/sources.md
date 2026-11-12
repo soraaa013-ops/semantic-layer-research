@@ -12,7 +12,19 @@
 | 固定版本源码 | 核查具体实现，不外推为所有入口或后续版本的行为 |
 | 本仓库分析 | 明确写为架构判断、候选路线、参考设计或评测计划 |
 
-没有进行厂商部署、模型推理、性能复现、报价或采购资格认证。外部链接的可访问性不等同于技术结论得到实测验证。
+没有进行厂商部署、模型推理、性能复现、报价或采购资格认证。外部链接的可访问性不等同于技术结论得到实测验证。终端销售案例的 Python / SQLite 虚构数据示例已在本地运行核验；这不构成厂商产品验证。
+
+## 终端 IT 建设案例的补充来源
+
+| 来源 | 用途 | 核查日期 |
+| --- | --- | --- |
+| [LookML 建模教程](https://docs.cloud.google.com/looker/docs/looker-core-qs-model-data) | Model、View、Explore 的建设步骤 | 2026-11-12 |
+| [LookML 示例](https://docs.cloud.google.com/looker/docs/what-is-lookml) | 文件结构与基础建模语法 | 2026-11-12 |
+| [Power BI 完整教程](https://learn.microsoft.com/power-bi/create-reports/tutorial-end-to-end-power-bi) | 数据到模型、报表与共享消费 | 2026-11-12 |
+| [Snowflake Semantic View 示例](https://docs.snowflake.com/en/en/user-guide/views-semantic/example) | 原生对象创建语法 | 2026-11-12 |
+| [Palantir 对象创建指南](https://www.palantir.com/docs/foundry/object-link-types/create-object-type) | backing datasource、属性、主键与保存 | 2026-11-12 |
+
+案例中的业务规则、数据、结果和建设建议为原创虚构示例，不代表任何企业事实。LookML、DAX 与 Snowflake 片段未在对应产品执行。
 
 ## DeepAnalyze 版本基线
 
